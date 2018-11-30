@@ -1,0 +1,56 @@
+#:kivy 1.0
+<RMCYTARoot>:
+    id:rootpane
+    textpane:textpane
+    scroll:scroll
+    direction:'tb-lr'
+    size_hint:(None, None)
+    size:(480, 854)
+    pos:self.parent.pos
+    ScrollView:
+        id:scroll
+        size_hint:(None, None)
+        size:rootpane.size
+        #do_scroll_x:False
+        #do_scroll_y:False
+        bar_color:(0, 0, 0, 0.4)
+        bar_inactiv_color:(0, 0, 0.7, 0.4)
+        bar_margin:2
+        bar_width:8
+        #on_scroll_x:textpane.focus = True
+        #on_scroll_y:textpane.focus = True
+        TextInput:
+            size_hint:(None, None)
+            id:textpane
+            text:''
+            on_text:self.y = self.minimum_height
+    orientation: "vertical"
+    padding: root.width * .02, root.height * .02
+    spacing: "10dp"
+
+    Label:
+        text_size: root.width, None
+        size: self.texture_size
+
+    TextInput:
+        id: text_input
+        hint_text: "What would you like to do? "
+        font_size: "30dp"
+
+    BoxLayout:
+        orientation: "horizontal"
+        spacing: "30dp"
+        Button:
+            text: "Execute Command!"
+            on_press: app.down_discography(CMD_IN.text)
+
+
+
+    ##############################
+    # Start of second part
+    ##############################
+    TextInput:
+        id: CMD_IN
+        hint_text: "What would you like to do, hombre? : "
+        on_press: app.Execute_CMD('look noob noob')
+        font_size: "30dp"

@@ -1,0 +1,29 @@
+# Check configuration tokens
+# Ensure build layout
+# Check configuration tokens
+# Preparing build
+# Check requirements for android
+# Run 'dpkg --version'
+# Cwd None
+Debian 'dpkg' package management program version 1.18.24 (amd64).
+This is free software; see the GNU General Public License version 2 or
+later for copying conditions. There is NO warranty.
+# Search for Git (git)
+#  -> found at /usr/bin/git
+# Search for Cython (cython)
+#  -> found at /usr/local/bin/cython
+# Search for Java compiler (javac)
+#  -> found at /usr/lib/jvm/java-8-openjdk-amd64/bin/javac
+# Search for Java keytool (keytool)
+#  -> found at /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/keytool
+# Install platform
+# Run 'pip install -q --user "appdirs" "colorama>=0.3.3" "sh>=1.10" "jinja2" "six"'
+# Cwd None
+# Apache ANT found at /home/wrabbit/.buildozer/android/platform/apache-ant-1.9.4
+# Android SDK found at /home/wrabbit/.buildozer/android/platform/android-sdk-23
+# Android NDK found at /home/wrabbit/NDK
+# Check application requirements
+# Check garden requirements
+# Compile platform
+# Run '/usr/bin/python -m pythonforandroid.toolchain create --dist_name=RMCYTA --bootstrap=sdl2 --requirements=kivy==1.10.1,python2 --arch armeabi-v7a --copy-libs --color=always --storage-dir="/home/wrabbit/Documents/Code/RMCYTA.py/.buildozer/android/platform/build"'
+# Cwd /home/wrabbit/Documents/Code/RMCYTA.py/.buildozer/android/platform/python-for-android-new-toolchain
